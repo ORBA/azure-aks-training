@@ -7,7 +7,7 @@
 
 az aks create --resource-group $RG --name $CLUSTER_NAME --node-count 1 --generate-ssh-keys
 
-# OPTIONAL: Install kubelet
+# OPTIONAL: Install kubectl if you dont have. You can do it when AKS creation is running.
 
 az aks install-cli
 

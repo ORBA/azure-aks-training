@@ -5,8 +5,8 @@
 
 kubectl apply -f azure-vote.yaml
 
-# Wait for service up (stop when external ip is present and go to this ip)
+# Wait for service (retry until EXTERNAL-IP is present)
 
-kubectl get services azure-vote-front --watch
+kubectl get services azure-vote-front
 
-# Go to external IP of front service
+# Go to EXTERNAL-IP

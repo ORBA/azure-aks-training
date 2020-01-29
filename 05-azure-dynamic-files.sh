@@ -32,4 +32,4 @@ kubectl exec mypod3 -- ls -l /mnt/azure
 
 # File should be present in both
 
-
+kubectl describe pvc azurefile
